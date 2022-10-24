@@ -2,7 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #F9EBEA;
+    background-color: #c5d6c9;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+    color:black; 
 }
 
 /* Navagation and Logo */
@@ -33,6 +40,7 @@ header {
 .link-icon {
     display: none;
 }
+
 nav {
     order: 4;
 }
@@ -52,13 +60,13 @@ nav {
 }
 
 .nav-link li a:hover {
-    color: #9e0762;
+    color: #064F1A;
 }
 
 button {
     margin-left: 20px;
     padding: 9px 25px;
-    background-color: #9e0762;
+    background-color: #064F1A;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -81,32 +89,111 @@ main {
     flex-grow: 1;
 }
 .welcome-image {
-    height: 600px;
+    height: 50em;
     width: 100%;
     margin-bottom: 20px;
-    background-image: url(../images/project-img/Web-Design-Development-welcome-sign.png);
+    background-image: url(../images/profile/hi.png);
+    background-color: #064F1A;
     background-size: cover;
     background-position: center;
 }
-aside {
-    clear: both;
-    flex: 1;
-    background-color: #9e0762;
-    padding: 80px;
-    text-align: left;
-}
-section {
-    margin: 2%;
-    flex: right;
-    width: 65%;
+
+.welcome-msg {
+    border-style: white;
     padding: 50px;
-    text-align: left;
-    border-style: solid;
+    text-align: center;
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     color: black;
 }
 
-.float-right img {
-    width: 200px;
-    height: 200px;
+.welcome-msg h2 {
+    font-size: large;
 }
 
+.welcome-msg p {
+    font-size: medium;
+}
+
+/* Main Section */
+
+.main-content {
+    margin: 150px 0px;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    border-style: solid;
+    color: black;
+    float: right;
+}
+
+.main-content h2 {
+    position: relative;
+    margin-inline-start: 40px;
+    display: inline-flex; 
+    padding: 10px;
+    background-color: #48584c;
+    color: white;
+    border: 2px solid green;
+    border-radius: 8px;
+    float: left;
+
+}
+
+.nav-link-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+    margin: 30px;
+    color: white;
+    border-style: dotted;
+    float: right;
+}
+
+.nav-link-title .avatar img {
+    width: 250px;
+    height: 250px;
+    float: left;
+    position: left;
+}
+
+.nav-link-title .profile-info {
+    float: right;
+}
+
+.nav-link-title p {
+    font-size: 20px;
+    margin: 25px;
+    padding: 15px;
+
+}
+
+.project-container {
+    border-style: double;
+    margin: 2px;
+    padding: 5px;
+    display: block;
+}
+
+.project-container .project-label-card {
+    border-style: solid;
+}
+
+.project-container .project-label-card .project-header {
+    color: white;
+    position: relative;
+}
+
+.project-container .project-label-card .project-body p {
+    color: white; 
+    font-size: small;
+}
+
+.icons img {
+    width: 40px; 
+    height: 40px;
+    margin: 0px 3px;
+}
