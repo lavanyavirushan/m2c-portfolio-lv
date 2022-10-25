@@ -2,19 +2,23 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #c5d6c9;
+    background-color: white;
 }
+
 
 body {
     margin: 0;
     padding: 0px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Trirong", sans-serif;
     color:black; 
+}
+main .main-content {
+    display: flex;
 }
 
 /* Navagation and Logo */
 li, a, button {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Trirong", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: black;
@@ -60,13 +64,13 @@ nav {
 }
 
 .nav-link li a:hover {
-    color: #064F1A;
+    color: #b7ace8;
 }
 
 button {
     margin-left: 20px;
     padding: 9px 25px;
-    background-color: #064F1A;
+    background-color: #b7ace8;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -81,7 +85,7 @@ button:hover {
     order: 4;
 }
 
-/* Main Intro */
+/* Welcome image and messsge */
 
 main {
     display: flex;
@@ -93,53 +97,59 @@ main {
     width: 100%;
     margin-bottom: 20px;
     background-image: url(../images/profile/hi.png);
-    background-color: #064F1A;
+    background-color: #b7ace8;
     background-size: cover;
     background-position: center;
 }
 
 .welcome-msg {
-    border-style: white;
-    padding: 50px;
-    text-align: center;
-    width: 65%;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 65%;
+    left: 60%;
     color: black;
 }
 
 .welcome-msg h2 {
-    font-size: large;
+    font-size: 25px;
+    background-color: #b7ace8;
+    color: black;
 }
 
-.welcome-msg p {
-    font-size: medium;
-}
+/* Left content  */
+/* .aside h2 {
+    border-style: dashed;
+    width: 180%; 
+    min-height: 100px;
+    flex-shrink: 0;
+    padding-left: 30px;
+    margin-left: 35px;
+    display: flex;
+    background-color: #645c85;
 
-/* Main Section */
+} */
 
 .main-content {
-    margin: 150px 0px;
-    width: 100%;
-    padding: 50px;
-    text-align: center;
-    border-style: solid;
-    color: black;
     float: right;
+    margin-right: 210px;
+    display: grid;
+    min-height: 200px;
+    flex-grow: 2;
+    flex-basis: 0;
+    align-self: centre;
 }
 
 .main-content h2 {
-    position: relative;
-    margin-inline-start: 40px;
-    display: inline-flex; 
-    padding: 10px;
-    background-color: #48584c;
-    color: white;
-    border: 2px solid green;
-    border-radius: 8px;
-    float: left;
+    border-style: double;
+    padding: 200px;
+    float:left;
+    
+}
 
+.avatar img {
+    width: 250px;
+    height: 250px;
+    float: left;
+    position: left;
 }
 
 .nav-link-title {
@@ -153,16 +163,6 @@ main {
     float: right;
 }
 
-.nav-link-title .avatar img {
-    width: 250px;
-    height: 250px;
-    float: left;
-    position: left;
-}
-
-.nav-link-title .profile-info {
-    float: right;
-}
 
 .nav-link-title p {
     font-size: 20px;
@@ -171,29 +171,4 @@ main {
 
 }
 
-.project-container {
-    border-style: double;
-    margin: 2px;
-    padding: 5px;
-    display: block;
-}
 
-.project-container .project-label-card {
-    border-style: solid;
-}
-
-.project-container .project-label-card .project-header {
-    color: white;
-    position: relative;
-}
-
-.project-container .project-label-card .project-body p {
-    color: white; 
-    font-size: small;
-}
-
-.icons img {
-    width: 40px; 
-    height: 40px;
-    margin: 0px 3px;
-}
