@@ -12,67 +12,148 @@
       href="https://fonts.googleapis.com/css?family=Sofia"
     />
     <title>Lavanya's Professional Portfolio</title>
-    <!-- <link rel="stylesheet" href="./assets/css/reset.css"/> -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
+    <!-- Navagation START -->
     <header>
       <img
         class="logo"
         src="./assets/images/icons/lv-name-logo.png"
-        alt="logo"
+        alt="Brand logo: Lavanya Virushan"
       />
       <nav>
-        <!-- <input class="link-button" type="checkbox" id="link-button" />
-        <label class="link-icon" for="link-button"
-          ><span class="nav-icon"></span
-        ></label> -->
         <ul class="nav-link">
-          <li><a href="#about" aria-label="Go to about">About</a></li>
+          <li>
+            <a href="#about" aria-label="Go to about">About</a>
+          </li>
           <li><a href="#project" aria-label="Go to projects">Project</a></li>
           <li><a href="#resume" aria-label="Go to resume">Resume</a></li>
           <li>
-            <a class="contact" href="#contact"><button>Contact</button></a>
-          </li>
-          <li>
-            <a class="toggle" href="#"><span class="bars"></span></a>
+            <a class="selected" href="#contact" aria-label="Go to contact"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
     </header>
+    <!-- Navagation END -->
 
     <main>
+      <!-- Welcome information START -->
       <figure class="welcome-image">
-        <!-- insert image -->
+        <img
+          src="./assets/images/profile/hi.png"
+          alt="Hello, I'm Lavanya Virushan!"
+        />
+        <h2>
+          Hello, I'm Lavanya Virushan! I am a developer in trainer working to
+          complete the UofT Bootcamp. Check out my journey!
+        </h2>
       </figure>
-      <h2>Hello, I'm Lavanya Virushan!</h2>
-      <p>
-        I am a developer in trainer working to complete the UofT Bootcamp.Check
-        out my journey!
-      </p>
+      <!-- Welcome information END -->
 
-      <aside>
+      <!-- Main Content START -->
+      <section class="about" id="about">
         <h2>About Me</h2>
-        <h2>Projects</h2>
-        <h2>Resume</h2>
-      </aside>
-
-      <section class="nav-link-title" id="about">
         <p>
           My name is Lavanya Virushan, a former teacher who has recently made
           the choice to change careers. I am hoping to learn and explore during
-          my new journey of web development.
+          my new journey of web development. I will be adding projects as I work
+          through the course to display my learning. This site is a work in
+          progress which will be updated as I progress in my journey.
         </p>
-        <figure class="float-right">
+      </section>
+
+      <section class="work" id="project">
+        <h2>Work</h2>
+        <figure class="last-project">
           <img
-            src="./assets/images/profile-img/IMG_7898.JPG"
-            alt="Lavanya Virushan Photo"
+            src="https://www.topcssgallery.com/wp-content/uploads/2017/12/18-web-design-trends-in-2018-min.jpg"
+            alt="Best sources of Web Design Insperation image"
           />
+          <div>
+            <h5>Surf Report</h5>
+            <p>MERN Stack</p>
+          </div>
         </figure>
       </section>
 
-      <section class="nav-link-title" id="projects">
+      <section class="resume" id="resume">
+        <h2>Resume</h2>
+        <p>Work in progress! Will be updated by the end of BOOTCAMP.</p>
+      </section>
+
+      <section class="contact-container" id="contact">
+        <h2>Contact</h2>
+        <p>Let's get in touch. Send me a message!</p>
+        <form action="" target="_blank">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            placeholder="Name"
+            required
+            name="Enter your Name"
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="text"
+            placeholder="Email"
+            required
+            name="Enter your Email"
+          />
+
+          <label for="subject">Subject</label>
+          <input type="text" placeholder="Subject" required name="Subject" />
+
+          <label for="message">Message</label>
+          <textarea
+            type="text"
+            placeholder="Enter your Message"
+            required
+            name="Message"
+          ></textarea>
+
+          <input type="submit" value="SEND MESSAGE" />
+        </form>
+      </section>
+
+      <footer>
+        <div class="icons">
+          <a target="_blank" href="https://www.instagram.com/">
+            <img
+              src="./assets/images/icons/insta-icon.png"
+              alt="instagram icon"
+            />
+          </a>
+          <a target="_blank" href="https://twitter.com/i/flow/login">
+            <img
+              src="./assets/images/icons/twitter-icon.png"
+              alt="twitter icon"
+            />
+          </a>
+          <a target="_blank" href="https://github.com/lavanyavirushan">
+            <img
+              src="./assets/images/icons/github-icon.png"
+              alt="github icon"
+            />
+          </a>
+        </div>
+      </footer>
+
+      <!-- <div>
+          <h4 class="small-title">Email</h4>
+            <img src="./assets/images/icons/email-icon.png" alt="email icon" /> -->
+      <!-- <p>lavanya.virushan@gmail.com</p>
+        </div> -->
+      <!--
+      <h2 class="projects">Projects</h2.>
+
+      <div class="nav-link-title" id="projects">
+        
         <div class="project-container">
           <figure class="project-label-card">
             <h3 class="project-header">Surf Report</h3>
@@ -126,48 +207,42 @@
             </div>
           </figure>
         </div>
-      </section>
+      </div>
 
-      <section class="nav-link-title" id="resume">
-        <div>
-          <h4 class="small-title">Click Me!</h4>
-          <!-- figure out what to do for resume! -->
-        </div>
-      </section>
+      <h2>Resume</h2>
+      
+      <div class="nav-link-title" id="resume">
+          <h4 class="small-title">Click Me!</h4> -->
+      <!-- figure out what to do for resume! -->
+      <!-- </div>
+    </section>  
 
-      <section class="nav-link-title" id="contact">
-        <h2>Contact</h2>
-        <div>
-          <h4 class="small-title">Email</h4>
-          <!-- <img src="./assets/images/icons/email-icon.png" alt="email icon" /> -->
-          <p>lavanya.virushan@gmail.com</p>
-        </div>
-        <div>
-          <h4 class="small-title">Follow on Social</h4>
-          <div class="icons">
-            <a target="_blank" href="https://www.instagram.com/">
-              <img
-                src="./assets/images/icons/insta-icon.png"
-                alt="instagram icon"
-              />
-            </a>
-            <a target="_blank" href="https://twitter.com/i/flow/login">
-              <img
-                src="./assets/images/icons/twitter-icon.png"
-                alt="twitter icon"
-              />
-            </a>
-            <a target="_blank" href="https://github.com/lavanyavirushan">
-              <img
-                src="./assets/images/icons/github-icon.png"
-                alt="github icon"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
+ 
+
+      <!-- <div>
+        <h4 class="small-title">Follow on Social</h4>
+        <div class="icons">
+          <a target="_blank" href="https://www.instagram.com/">
+            <img
+              src="./assets/images/icons/insta-icon.png"
+              alt="instagram icon"
+            />
+          </a>
+          <a target="_blank" href="https://twitter.com/i/flow/login">
+            <img
+              src="./assets/images/icons/twitter-icon.png"
+              alt="twitter icon"
+            />
+          </a>
+          <a target="_blank" href="https://github.com/lavanyavirushan">
+            <img
+              src="./assets/images/icons/github-icon.png"
+              alt="github icon"
+            />
+          </a>
+      </div>
+    </footer>
+-->
     </main>
-
-    <footer></footer>
   </body>
 </html>
