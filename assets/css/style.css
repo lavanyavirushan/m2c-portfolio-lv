@@ -147,6 +147,9 @@ header::after{
 
 .contact-container form {
     margin-inline-start: 50%;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
 }
 .contact-container h2 {
     text-align: center;
@@ -157,12 +160,16 @@ header::after{
     text-align: center;
     background-color: rgba(var(--primary-color), 0.6);
 }
-
+/* .contact-container textarea {
+    width: 50px;
+} */
 .contact-container input:nth-of-type(4) {
     flex: content;
     padding: 5px;
     margin: 6px; 
     margin-inline-start: 40px;
+    width: 130px;
+    background-color: rgba(var(--primary-color), 0.6);
 }
 .contact-container input, textarea {
     display:flex;
