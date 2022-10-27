@@ -96,42 +96,41 @@ header::after{
     float: left;
 }
 
-.work-column figure{
-    width: 75%;
-    float: left;
-    display: block;
-    border-left: 5px solid rgba(var(--primary-color), 1);
-    padding: 0px 40px 20px 40px;
-    position: relative;
-}
-
 /* Project Content */
-.work-column figure {
+.work-column {
     display: flex;
-    flex-direction: column;
-    gap: 1em;
-    margin-left: 25%;
-}
+    gap: 20px 30px;
+    transition: 500ms linear;
 
-.work-column figure img{
-    width:100%; 
-    height: 300px; 
+}
+.work-column h2 {
+    margin-left: 18%;
+    padding: 0 15px;
+    font-size: var(--font-extra-large);
+    border-right: rgba(var(--primary-color), 1);
+}
+.work-column figure img {
+    width: 30rem;
+    height: 150px;
     object-fit:cover;
     object-position: 0% 0% 0%;
+    gap: 5px 15px ;
     border: 5px solid rgba(var(--secondery-color), 1);
+    flex-wrap: wrap;
+    margin: 1rem;
+
 }
 
 .work-column figure div{
     position: absolute;
-    bottom: 20%;
-    left: 45px;
-    background: rgba(var(--secondery-color), 1);
-    width: auto;
+    bottom: 13%;
+    background: rgba(var(--primary-color), 0.6);
+    width: 15%;
     padding: 10px;
 }
 
 .work-column figure div h5, .work-column figure div p{
-    background: rgba(var(--secondery-color), 1);
+    background: rgba(var(--primary-color), 0.6);
     padding: 0;
     margin: 0;
 }
