@@ -134,37 +134,49 @@
 
       <!-- CONTACT INFORMATION START -->
       <section class="contact-container" id="contact">
-        <h2>Contact</h2>
-        <p>Let's get in touch. Send me a message!</p>
-        <form action="" target="_blank">
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            placeholder="Name"
-            required
-            name="Enter your Name"
-          />
+        <div class="contact-left">
+          <h2>Contact</h2>
+          <p>Let's get in touch. Send me a message!</p>
+        </div>
+        <form class="contact-right" action="" target="_blank">
+          <div class="top-form">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              placeholder="Enter your Full Name"
+              required
+              name="Enter your Name"
+            />
 
-          <label for="email">Email:</label>
-          <input
-            type="text"
-            placeholder="Email"
-            required
-            name="Enter your Email"
-          />
+            <label for="email">Email:</label>
+            <input
+              type="text"
+              placeholder="Enter your Email"
+              required
+              name="Enter your Email"
+            />
+          </div>
 
-          <label for="subject">Subject:</label>
-          <input type="text" placeholder="Subject" required name="Subject" />
+          <div class="middle-form">
+            <label for="subject">Subject:</label>
+            <input
+              type="text"
+              placeholder="What is it about"
+              required
+              name="Subject"
+            />
 
-          <label for="message">Message:</label>
-          <textarea
-            type="text"
-            placeholder="Enter your Message"
-            required
-            name="Message"
-          ></textarea>
-
-          <input type="submit" value="SEND MESSAGE" />
+            <label for="message">Message:</label>
+            <textarea
+              type="text"
+              placeholder="Enter your Message"
+              required
+              name="Message"
+            ></textarea>
+          </div>
+          <div class="bottom-form">
+            <input type="submit" value="SEND MESSAGE" />
+          </div>
         </form>
       </section>
 
