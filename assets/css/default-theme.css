@@ -20,10 +20,20 @@
 
   }
 
-  @media  (max-width: 479px) {
+  @media  (max-width: 480px) {
     :root {
-      --font-large: 15px;
-      --font-extra-large: 26px;
+      --font-extra-small: 8px;
+      --font-small: 14px;
+      --font-medium: 18px;
+      --font-large: 20px;
+      --font-extra-large: 22px;
+    }
+
+  }
+
+  @media  (max-width: 768px) {
+    :root {
+      --font-medium: 18px;
     }
 
   }
