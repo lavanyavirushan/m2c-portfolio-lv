@@ -22,7 +22,7 @@
 
   @media  (max-width: 479px) {
     :root {
-      --font-large: 5px;
+      --font-large: 15px;
       --font-extra-large: 26px;
     }
 
