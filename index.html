@@ -51,9 +51,8 @@
           complete the UofT Bootcamp. Check out my journey!
         </h2>
       </figure>
-      <!-- Welcome information END -->
 
-      <!-- Main Content START -->
+      <!-- Main Content -->
       <section class="about" id="about">
         <h2>About Me</h2>
         <p>
@@ -65,12 +64,15 @@
         </p>
       </section>
 
-      <!-- PROJECT CONTENT START -->
+      <!-- PROJECT CONTENT-->
       <section id="project">
         <h2>Work</h2>
-        <!--Main project-->
+        <!--INDIVIDUAL PROJECT BOXES-->
         <div class="project-items">
-          <a href="https://lavanyavirushan.github.io/prework-study-guide/">
+          <a
+            href="https://lavanyavirushan.github.io/prework-study-guide/"
+            aria-label="Go to project site"
+          >
             <figure>
               <img
                 src="./assets/images/project/bootcamp-notes.jpg"
@@ -83,7 +85,10 @@
             </figure>
           </a>
 
-          <a href="https://github.com/lavanyavirushan?tab=projects">
+          <a
+            href="https://github.com/lavanyavirushan?tab=projects"
+            aria-label="Go to project site"
+          >
             <figure>
               <img
                 src="./assets/images/project/led-screen-rgb-background.jpeg"
@@ -96,7 +101,10 @@
             </figure>
           </a>
 
-          <a href="https://github.com/lavanyavirushan?tab=projects">
+          <a
+            href="https://github.com/lavanyavirushan?tab=projects"
+            aria-label="Go to project site"
+          >
             <figure>
               <img
                 src="./assets/images/project/calculator-img.jpeg"
@@ -109,7 +117,10 @@
             </figure>
           </a>
 
-          <a href="https://github.com/lavanyavirushan?tab=projects">
+          <a
+            href="https://github.com/lavanyavirushan?tab=projects"
+            aria-label="Go to project site"
+          >
             <figure>
               <img
                 src="./assets/images/project/pastel-puzzle.jpeg"
@@ -122,7 +133,10 @@
             </figure>
           </a>
 
-          <a href="https://github.com/lavanyavirushan?tab=projects">
+          <a
+            href="https://github.com/lavanyavirushan?tab=projects"
+            aria-label="Go to project site"
+          >
             <figure>
               <img
                 src="./assets/images/project/run-buddy-img.webp"
@@ -137,13 +151,13 @@
         </div>
       </section>
 
-      <!-- RESUME CONTENT START -->
+      <!-- RESUME CONTENT-->
       <section class="resume" id="resume">
         <h2>Resume</h2>
         <p>Work in progress! Will be updated by the end of BOOTCAMP.</p>
       </section>
 
-      <!-- CONTACT INFORMATION START -->
+      <!-- CONTACT INFORMATION-->
       <section id="contact">
         <h2>Contact</h2>
 
@@ -156,6 +170,7 @@
               placeholder="Enter your Full Name"
               required
               name="Enter your Name"
+              aria-label="Enter your name"
             />
           </div>
           <div>
@@ -165,12 +180,19 @@
               placeholder="Enter your Email"
               required
               name="Enter your Email"
+              aria-label="Enter your email"
             />
           </div>
 
           <div>
             <label for="subject">Subject:</label>
-            <input type="text" placeholder="Subject" required name="Subject" />
+            <input
+              type="text"
+              placeholder="Subject"
+              required
+              name="Subject"
+              aria-label="Enter the subject"
+            />
           </div>
 
           <div>
@@ -180,37 +202,44 @@
               placeholder="Enter your Message"
               required
               name="Message"
+              aria-label="Enter your message"
             ></textarea>
           </div>
 
           <div class="bottom-form">
-            <input type="submit" value="SEND MESSAGE" />
+            <input
+              type="submit"
+              value="SEND MESSAGE"
+              aria-labelledby="sendbutton"
+            />
           </div>
         </form>
       </section>
-
-      <footer>
-        <div class="icons">
-          <a target="_blank" href="https://www.instagram.com/">
-            <img
-              src="./assets/images/icons/insta-icon.png"
-              alt="instagram icon"
-            />
-          </a>
-          <a target="_blank" href="https://github.com/lavanyavirushan">
-            <img
-              src="./assets/images/icons/github-icon.png"
-              alt="github icon"
-            />
-          </a>
-          <a target="_blank" href="https://twitter.com/i/flow/login">
-            <img
-              src="./assets/images/icons/twitter-icon.png"
-              alt="twitter icon"
-            />
-          </a>
-        </div>
-      </footer>
     </main>
+
+    <!-- FOOTER SOCIAL MEDIA CONTENT-->
+    <footer class="icons">
+      <a
+        target="_blank"
+        href="https://www.instagram.com/"
+        aria-label="Go to instagram page"
+      >
+        <img src="./assets/images/icons/insta-icon.png" alt="instagram icon" />
+      </a>
+      <a
+        target="_blank"
+        href="https://github.com/lavanyavirushan"
+        aria-label="Go to github page"
+      >
+        <img src="./assets/images/icons/github-icon.png" alt="github icon" />
+      </a>
+      <a
+        target="_blank"
+        href="https://twitter.com/i/flow/login"
+        aria-label="Go to twitter page"
+      >
+        <img src="./assets/images/icons/twitter-icon.png" alt="twitter icon" />
+      </a>
+    </footer>
   </body>
 </html>
