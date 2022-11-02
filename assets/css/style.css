@@ -231,30 +231,25 @@ footer {
 }
 
 /* Media Query */
-/* @media  (max-width:640px) {
-   .logo img {
-    display: flex;
-   }
-    .nav {
-    float: none;
-
-   }
-    .nav-link a {
-    padding: 8px 8px;
-
-   }
-   .welcome-image h2 {
-    font-size: medium;
-    width: 43%;
-   }
-   .about h2, #project h2, .resume h2, #contact h2 {
-    font-size: medium;
-    font-weight: 700;
-   }
-} */
-
 
 @media  (max-width: 480px) {
+
+
+    .nav-link li {
+        margin: 0px;
+    }
+
+    .nav-link li:last-child {
+        margin: 0px;
+    }
+
+    .welcome-image h2{
+        font-size: var(--font-large);
+    }
+
+    .welcome-image img {
+        height: 385px; 
+    }
 
     .about h2, .resume h2, #project h2, #contact h2{
         width: 100%;
@@ -297,4 +292,15 @@ footer {
     #contact form div{
         width: 100%;
     }
+
+    #contact form h4{
+        font-size: var(--font-medium);
+    }
+
+    .icons {
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    
 }
