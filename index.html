@@ -27,14 +27,12 @@
       <nav>
         <ul class="nav-link">
           <li>
-            <a href="#about" aria-label="Go to about">About</a>
+            <a class="selected" href="#about" aria-label="Go to about">About</a>
           </li>
           <li><a href="#project" aria-label="Go to projects">Project</a></li>
           <li><a href="#resume" aria-label="Go to resume">Resume</a></li>
           <li>
-            <a class="selected" href="#contact" aria-label="Go to contact"
-              >Contact</a
-            >
+            <a href="#contact" aria-label="Go to contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -68,62 +66,75 @@
       </section>
 
       <!-- PROJECT CONTENT START -->
-      <section class="work-column" id="project">
+      <section id="project">
         <h2>Work</h2>
-        <figure class="project-one">
-          <img
-            src="./assets/images/project/prework-project-img.jpeg"
-            alt="Note taking process"
-          />
-          <div>
-            <h5>BOOTCAMP Prework</h5>
-            <p>HTML/CSS/JavaScript</p>
-          </div>
-        </figure>
+        <!--Main project-->
+        <div class="project-items">
+          <a href="https://lavanyavirushan.github.io/prework-study-guide/">
+            <figure>
+              <img
+                src="./assets/images/project/bootcamp-notes.jpg"
+                alt="Note taking process"
+              />
+              <div>
+                <h5>BOOTCAMP Prework</h5>
+                <p>HTML/CSS/JavaScript</p>
+              </div>
+            </figure>
+          </a>
 
-        <figure class="project-two">
-          <img
-            src="./assets/images/project/led-screen-rgb-background.jpeg"
-            alt="LED Screen zoomed in"
-          />
-          <div>
-            <h5>LED Wall</h5>
-            <p>Node/loT</p>
-          </div>
-        </figure>
+          <a href="jhj">
+            <figure>
+              <img
+                src="./assets/images/project/led-screen-rgb-background.jpeg"
+                alt="LED Screen zoomed in"
+              />
+              <div>
+                <h5>LED Wall</h5>
+                <p>Node/loT</p>
+              </div>
+            </figure>
+          </a>
 
-        <figure class="project-three">
-          <img
-            src="./assets/images/project/calculator-img.jpeg"
-            alt="Working on the calculator"
-          />
-          <div>
-            <h5>Calculator</h5>
-            <p>React/JavaScript</p>
-          </div>
-        </figure>
+          <a href="jhj">
+            <figure>
+              <img
+                src="./assets/images/project/calculator-img.jpeg"
+                alt="Working on the calculator"
+              />
+              <div>
+                <h5>Calculator</h5>
+                <p>React/JavaScript</p>
+              </div>
+            </figure>
+          </a>
 
-        <figure class="project-four">
-          <img
-            src="./assets/images/project/pastel-puzzle.jpeg"
-            alt="Pastel colours lined up as a puzzle"
-          />
-          <div>
-            <h5>Pastel Puzzels</h5>
-            <p>MERN Stack</p>
-          </div>
-        </figure>
+          <a href="jhj">
+            <figure>
+              <img
+                src="./assets/images/project/pastel-puzzle.jpeg"
+                alt="Pastel colours lined up as a puzzle"
+              />
+              <div>
+                <h5>Pastel Puzzels</h5>
+                <p>MERN Stack</p>
+              </div>
+            </figure>
+          </a>
 
-        <figure class="project-five">
-          <img
-            src="./assets/images/project/run-buddy-img.webp"
-            alt="Blurred runner running"
-          />
-          <div>
-            <h5>Run Buddy</h5>
-            <p>HTML/CSS</p>
-          </div>
-        </figure>
+          <a href="jhj">
+            <figure>
+              <img
+                src="./assets/images/project/run-buddy-img.webp"
+                alt="Blurred runner running"
+              />
+              <div>
+                <h5>Run Buddy</h5>
+                <p>HTML/CSS</p>
+              </div>
+            </figure>
+          </a>
+        </div>
       </section>
 
       <!-- RESUME CONTENT START -->
@@ -133,13 +144,12 @@
       </section>
 
       <!-- CONTACT INFORMATION START -->
-      <section class="contact-container" id="contact">
-        <div class="contact-left">
-          <h2>Contact</h2>
-          <p>Let's get in touch. Send me a message!</p>
-        </div>
-        <form class="contact-right" action="" target="_blank">
-          <div class="top-form">
+      <section id="contact">
+        <h2>Contact</h2>
+
+        <form action="" target="_blank">
+          <h4>Let's get in touch. Send me a message!</h4>
+          <div>
             <label for="name">Name:</label>
             <input
               type="text"
@@ -147,7 +157,8 @@
               required
               name="Enter your Name"
             />
-
+          </div>
+          <div>
             <label for="email">Email:</label>
             <input
               type="text"
@@ -157,15 +168,12 @@
             />
           </div>
 
-          <div class="middle-form">
+          <div>
             <label for="subject">Subject:</label>
-            <input
-              type="text"
-              placeholder="What is it about"
-              required
-              name="Subject"
-            />
+            <input type="text" placeholder="Subject" required name="Subject" />
+          </div>
 
+          <div>
             <label for="message">Message:</label>
             <textarea
               type="text"
@@ -174,6 +182,7 @@
               name="Message"
             ></textarea>
           </div>
+
           <div class="bottom-form">
             <input type="submit" value="SEND MESSAGE" />
           </div>
@@ -188,115 +197,20 @@
               alt="instagram icon"
             />
           </a>
-          <a target="_blank" href="https://twitter.com/i/flow/login">
-            <img
-              src="./assets/images/icons/twitter-icon.png"
-              alt="twitter icon"
-            />
-          </a>
           <a target="_blank" href="https://github.com/lavanyavirushan">
             <img
               src="./assets/images/icons/github-icon.png"
               alt="github icon"
+            />
+          </a>
+          <a target="_blank" href="https://twitter.com/i/flow/login">
+            <img
+              src="./assets/images/icons/twitter-icon.png"
+              alt="twitter icon"
             />
           </a>
         </div>
       </footer>
-
-      <!--
-      <h2 class="projects">Projects</h2.>
-
-      <div class="nav-link-title" id="projects">
-        
-        <div class="project-container">
-          <figure class="project-label-card">
-            <h3 class="project-header">Surf Report</h3>
-            <div class="project-body">
-              <p>MERN Stack</p>
-            </div>
-          </figure>
-        </div>
-
-        <div class="project-container">
-          <figure class="project-label-card">
-            <h3 class="project-header">LED Wall</h3>
-            <div class="project-body">
-              <p>Node/loT</p>
-            </div>
-          </figure>
-        </div>
-
-        <div class="project-container">
-          <figure class="project-label-card">
-            <h3 class="project-header">Calculator</h3>
-            <div class="project-body">
-              <p>React/JavaScript/CSS</p>
-            </div>
-          </figure>
-        </div>
-
-        <div class="project-container">
-          <figure class="project-label-card">
-            <h3 class="project-header">Pastel Puzzels</h3>
-            <div class="project-body">
-              <p>MERN Stack</p>
-            </div>
-          </figure>
-        </div>
-
-        <div class="project-container">
-          <figure class="project-label-card">
-            <h3 class="project-header">Run Buddy</h3>
-            <div class="project-body">
-              <p>HTML/CSS</p>
-            </div>
-          </figure>
-        </div>
-
-        <div class="project-container">
-          <figure class="project-label-card">
-            <h3 class="project-header">Run Buddy</h3>
-            <div class="project-body">
-              <p>HTML/CSS</p>
-            </div>
-          </figure>
-        </div>
-      </div>
-
-      <h2>Resume</h2>
-      
-      <div class="nav-link-title" id="resume">
-          <h4 class="small-title">Click Me!</h4> -->
-      <!-- figure out what to do for resume! -->
-      <!-- </div>
-    </section>  
-
- 
-
-      <!-- <div>
-        <h4 class="small-title">Follow on Social</h4>
-        <div class="icons">
-          <a target="_blank" href="https://www.instagram.com/">
-            <img
-              src="./assets/images/icons/insta-icon.png"
-              alt="instagram icon"
-            />
-          </a>
-          <a target="_blank" href="https://twitter.com/i/flow/login">
-            <img
-              src="./assets/images/icons/twitter-icon.png"
-              alt="twitter icon"
-            />
-          </a>
-          <a target="_blank" href="https://github.com/lavanyavirushan">
-            <img
-              src="./assets/images/icons/github-icon.png"
-              alt="github icon"
-            />
-          </a>
-      </div>
-    </footer>
--->
     </main>
   </body>
 </html>
