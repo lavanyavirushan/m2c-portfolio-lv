@@ -234,6 +234,7 @@ footer {
 
 @media  (max-width: 480px) {
 
+
     .nav-link li {
         margin: 0px;
     }
@@ -299,4 +300,7 @@ footer {
     .icons {
         justify-content: center;
     }
+}
+@media (max-width: 768px) {
+    
 }
