@@ -22,9 +22,9 @@ N/A
 
 ## Screenshot of the site
 
-![Screenshot](./assests/images/markdown-images/screenshot-m2c-phone-1.png)
+![Screenshot](./assets/images/markdown-images/screenshot-m2c-phone-1.png)
 
-![Screenshot](./assests/images/markdown-images/screenshot-m2c-site.png)
+![Screenshot](./assets/images/markdown-images/screenshot-m2c-site.png)
 
 ## License
 
