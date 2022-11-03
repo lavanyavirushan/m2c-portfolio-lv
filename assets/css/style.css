@@ -247,7 +247,7 @@ footer {
 
 /* Media Query */
 
-@media  (max-width: 480px) {
+@media  (max-width: 680px) {
 
     header{
         position: -webkit-sticky;
@@ -289,21 +289,16 @@ footer {
         height: 385px; 
     }
 
+    .about, .resume, #project, #contact{
+        scroll-margin-top: 10rem;
+    }
+
     .about h2, .resume h2, #project h2, #contact h2{
         width: 100%;
-        text-align: left;
-        padding: 0 15px;
-        font-size: var(--font-extra-large);
         float: none;
-        padding: 0px 20px 10px 20px;
-        border-bottom: 5px solid rgba(var(--primary-color), 1);
     }
     
     .about p, .resume p, #project .project-items, #contact form{
-        display: block;
-        border-top: 0px solid rgba(var(--primary-color), 1);
-        border-left: 0;
-        padding: 20px 20px 20px 20px;
         width: 100%;
         float: none;
     }
@@ -341,5 +336,33 @@ footer {
     #contact form div input, #contact form div textarea{
         line-height: 55px;
         font-size: var(--font-medium);
+    }
+
+    #contact form div:last-child{
+        width: 100%;
+    }
+}
+
+
+@media  (max-width: 1024px) {
+    .about h2, .resume h2, #project h2, #contact h2{
+        width: calc(100% - 30px);
+        text-align: left;
+        font-size: var(--font-extra-large);
+        padding: 0px 20px 10px 20px;
+        border-bottom: 5px solid rgba(var(--primary-color), 1);
+        margin: 5px 15px 5px 15px;
+    }
+    
+    .about p, .resume p, #project .project-items, #contact form{
+        display: block;
+        border-top: 0px solid rgba(var(--primary-color), 1);
+        border-left: 0;
+        padding: 20px 20px 20px 20px;
+        width: 100%;
+    }
+
+    #project .project-items, #contact form{
+        display: flex;
     }
 }
