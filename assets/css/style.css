@@ -65,7 +65,7 @@ header::after{
     background-color: rgba(var(--primary-color), 1);
 }
 
-.welcome-image h2{
+.welcome-image h1{
     position: absolute;
     bottom: 10%;
     right: 30px;
@@ -97,7 +97,6 @@ header::after{
     border-left: 5px solid rgba(var(--primary-color), 1);
     padding: 0px 40px 20px 40px;
     width: 75%;
-    text-align: justify;
     float: right;
 }
 
@@ -160,7 +159,7 @@ header::after{
     background: rgba(var(--primary-color), 0.8);
 }
 
-#project .project-items a figure div h5{
+#project .project-items a figure div h3{
     font-size: var(--font-medium);
 }
 
@@ -168,7 +167,7 @@ header::after{
     font-size: var(--font-small);
 }
 
-#project .project-items a figure div h5, #project .project-items figure div p{
+#project .project-items a figure div h3, #project .project-items figure div p{
     background: rgba(var(--primary-color), 0);
 }
 
@@ -181,7 +180,7 @@ header::after{
     justify-content: space-between;
 }
 
-#contact form h4{
+#contact form h3{
     font-size: var(--font-large);
     text-align: center;
     width: 100%;
@@ -282,7 +281,7 @@ footer {
         margin: 0px;
     }
 
-    .welcome-image h2{
+    .welcome-image h1{
         font-size: var(--font-extra-large);
     }
 
@@ -306,7 +305,6 @@ footer {
         border-left: 0;
         padding: 20px 20px 20px 20px;
         width: 100%;
-        text-align: justify;
         float: none;
     }
 
@@ -332,7 +330,7 @@ footer {
         width: 100%;
     }
 
-    #contact form h4{
+    #contact form h3{
         font-size: var(--font-large);
     }
 
@@ -344,8 +342,4 @@ footer {
         line-height: 55px;
         font-size: var(--font-medium);
     }
-
-    /* .icons {
-        justify-content: center;
-    } */
 }
